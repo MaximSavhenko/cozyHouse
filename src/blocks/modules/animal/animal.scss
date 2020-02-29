@@ -1,0 +1,42 @@
+.animal {
+    background-color: #fafafa;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include trs;
+    padding: 0 15px 35px;
+
+    &:hover {
+        box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
+        
+    }
+
+    &__img {
+        padding-bottom: 100%;
+        position: relative;
+        margin: 0 -15px 21px;
+        img {
+            @include img_ctr;
+        }
+    }
+
+    &__name {
+        display: block;
+        padding-bottom: 15px;
+        font-size: 20px;
+        margin-bottom: auto;
+    }
+
+    &__btn {
+        max-width: 190px;
+        margin: 0 auto;
+        @include b(460) {
+            padding-top: 70px;
+        }
+    }
+
+}

@@ -1,0 +1,188 @@
+.header {
+    // height: 170px;
+
+    &--white-bg {
+
+        .header {
+            background-color: #fafafa;
+            
+            &__wrap {
+
+            }
+
+            
+            &__logo-title {
+                color: $black;
+            }
+
+            &__logo-text {
+                color: $black;
+            }
+
+            &__nav-item {
+                a{
+                    color: $black;
+                    &:hover {
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+    &__wrap {
+        @include b(mobile) {
+            height: 80px;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 170px;
+    }
+
+    &__logo-link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__logo-title {
+        font-size: $logo-fz;
+        color: $beige;
+    }
+
+    &__logo-text {
+        font-family: $second-font;
+        font-size: $logo_text-fz;
+        color: $white;
+    }
+
+
+    // -------------------BURGER BTN
+    &__burger-position {
+        @include b(tablet) {
+            display: flex;
+        }
+        display: none;
+    }
+
+
+    &__btn-menu {
+        position: relative;
+        width: 16px;
+        height: 12px;
+        margin-top: 12px;
+
+        span {
+            @include trs;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $white;
+
+            &:nth-child(2) {
+                top: 5px;
+            }
+
+            &:nth-child(3) {
+                top: 10px;
+            }
+        }
+
+        &.active {
+            span {
+
+                &:nth-child(1) {
+                    top: 1px;
+                    transform: rotate(-45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    top: 1px;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    /// ------------------BURGER BTN
+
+    &__wrap-nav {
+        @include b(tablet) {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: auto;
+            padding: 30px 0;
+            background-color: $white;
+        }
+    }
+
+    &__nav {
+        @include b(tablet) {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+
+    &__nav-list {
+        @include b(tablet) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 105px 0;
+        }
+        display: flex;
+    }
+
+    &__nav-item {
+        @include b(tablet) {
+            padding: 0 0 20px;
+            a {
+                font-size: 28px;
+                color: $black;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+        padding-left: 30px;
+        a {
+            color: $nav-color;
+            font-family: $second-font;
+            position: relative;
+            transition: all .3s;
+        }
+        
+        a::before {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            transition: all .3s;
+            background-color: $beige;
+            color: #fff;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        a:hover::before {
+            width: 100%;
+        }
+    }
+}
+

@@ -1,0 +1,96 @@
+.donation {
+    background-color: #f6f6f6;
+    padding: 60px 0;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        @include b(mobile) {
+            display: block;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        padding-right: 40px;
+        @include b(mobile) {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto 30px;
+            padding-right: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        width: 50%;
+        max-width: 385px;
+        @include b(mobile) {
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+        }   
+    }
+
+    &__caption {
+        margin-bottom: 20px;
+    }
+    
+    &__text {
+        margin-bottom: 10px;
+        font-size: 15px;
+        color: #545454;
+    }
+
+    &__card {
+        margin-bottom: 28px;
+        display: flex;
+        @include b(mobile) {
+            justify-content: center;
+        }
+
+        &-link {
+            display: flex;
+            align-items: center;
+            padding: 8px 14px;
+            color: $black;
+            font-size: 20px;
+            background-color: $beige;
+            border-radius: 10px;
+            @include trs;
+            @include b(375) {
+                font-size: 17px;
+            }
+
+            &:hover {
+                color: $beige;
+                background-color: $black;
+                svg {
+                    fill: $beige;
+                }
+            }
+
+            svg {
+                width: 30px;
+                height: 30px;
+                @include trs;
+            }
+
+            span {
+                padding-left: 15px;
+            }
+        }
+    }
+
+    &__descr {
+        font-style: italic;
+        font-family: $second-font;
+        font-size: 12px;
+        color: #b2b2b2;
+        line-height: 1.5;
+        letter-spacing: .2px;
+    }
+}

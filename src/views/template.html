@@ -1,0 +1,67 @@
+
+       @@include("../blocks/modules/head/head.html", {
+        "title": "Template"
+    })
+
+    <style>
+
+        .row-template {
+            margin: 20px 0;
+        }
+
+    </style>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="row-template">
+                <input type="text" placeholder="Enter text">
+            </div>
+
+            <div class="row-template">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <span>I'm checkbox</span>
+                </label>
+            </div>
+            <div class="row-template">
+                <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span>I'm checkbox</span>
+                </label>
+            </div>
+
+            <div class="row-template">
+                <label class="radio">
+                    <input type="radio" name="group" checked>
+                    <span>I'm radio1</span>
+                </label>
+            </div>
+            <div class="row-template">
+                <label class="radio">
+                    <input type="radio" name="group">
+                    <span>I'm radio2</span>
+                </label>
+            </div>
+            <div class="row-template">
+                <select>
+                    <option value="">Option 1</option>
+                    <option value="">Option 2</option>
+                    <option value="">Option 3</option>
+                    <option value="">Option 4</option>
+                    <option value="">Option 5</option>
+                </select>
+            </div>
+            <div class="row-template">
+                <a href="" class="btn">I'm button</a>
+            </div>
+            <div class="row-template">
+                <button class="btn">I'm form button</button>
+            </div>
+            <div class="row-template">
+                <button class="btn btn--border">I'm form button</button>
+            </div>
+        </div>
+    </div>
+        
+    @@include("../blocks/modules/foot/foot.html")
+   
