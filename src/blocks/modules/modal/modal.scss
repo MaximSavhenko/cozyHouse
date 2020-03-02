@@ -8,6 +8,9 @@
     width: 100%;
     height: 100%;
     transition: all 1s;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
     &.close {
         left: -100px;
@@ -15,8 +18,6 @@
 
     &.active {
         left: 0;
-
-        
 
         .modal {
             
@@ -98,18 +99,20 @@
     }
 
     &__outer {
-        height: 100%;
         padding: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 100%;
+        
     }
 
     &__wrap {
-        max-width: 1028px;
+        width: 1028px;
+        max-width: 100%;
         padding: 58px 58px 0 0;
-        position: relative;
         margin-bottom: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         @include b(tablet) {
             padding: 0;
         }
@@ -196,11 +199,6 @@
 
     &__name {
         display: block;
-        // transform: translateY(-50px);
-        // opacity: 0;
-        // transition: all 1s;
-        // animation: typeanimation 3s;
-        
     }
 
     &__type {

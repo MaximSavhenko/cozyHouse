@@ -19,6 +19,12 @@
                 color: $black;
             }
 
+            &__btn-menu {
+                span {
+                    background-color: $black;
+                }
+            }
+
             &__nav-item {
                 a{
                     color: $black;
