@@ -228,6 +228,10 @@ select {
   color: #292929;
 }
 
+.header--white-bg .header__btn-menu span {
+  background-color: #292929;
+}
+
 .header--white-bg .header__nav-item a {
   color: #292929;
 }
@@ -894,18 +898,19 @@ select {
 }
 
 .modal__outer {
-  height: 100%;
   padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
 }
 
 .modal__wrap {
-  max-width: 1028px;
+  width: 1028px;
+  max-width: 100%;
   padding: 58px 58px 0 0;
-  position: relative;
   margin-bottom: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal__close-btn {
