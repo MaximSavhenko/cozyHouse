@@ -1,0 +1,65 @@
+<div class="pets">
+    <div class="container">
+        <div class="caption pets__caption">
+            <span>Our friends who are looking for a house</span>
+        </div>
+       <div class="pets__wrap">
+           
+            <div class="pets__item">
+                @@include("../animal/animal.html", {
+                    "img": "./img/pic/cat.jpg",
+                    "name": "Katrine"
+                })
+            </div>
+
+            <div class="pets__item">
+                @@include("../animal/animal.html", {
+                    "img": "./img/pic/dog_1.jpg",
+                    "name": "Jennifer"
+                })
+            </div>
+        
+            <div class="pets__item">
+                @@include("../animal/animal.html", {
+                    "img": "./img/pic/dog_2.jpg",
+                    "name": "Woody"
+                })
+            </div>
+
+            <div class="pets__item">
+                @@include("../animal/animal.html", {
+                    "img": "./img/pic/sop.jpg",
+                    "name": "Sophia"
+                })
+            </div>
+
+            <div class="pets__item">
+                @@include("../animal/animal.html", {
+                    "img": "./img/pic/tim.jpg",
+                    "name": "Timmy"
+                })
+            </div>
+            <div class="pets__item">
+                @@include("../animal/animal.html", {
+                    "img": "./img/pic/char.jpg",
+                    "name": "Charly"
+                })
+            </div>
+            <div class="pets__item">
+                @@include("../animal/animal.html", {
+                    "img": "./img/pic/skar.jpg",
+                    "name": "Scarlett"
+                })
+            </div>
+            <div class="pets__item">
+                @@include("../animal/animal.html", {
+                    "img": "./img/pic/fre.jpg",
+                    "name": "Freddie"
+                })
+            </div>
+            
+       </div>
+       @@include("../pagination/pagination.html")
+    </div>
+    
+</div>
