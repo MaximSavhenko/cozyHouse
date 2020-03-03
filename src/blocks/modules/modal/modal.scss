@@ -22,7 +22,7 @@
         .modal {
             
             &__img {
-                animation: typeanimation 3s;
+                animation: typeanimation 2s;
                 @keyframes typeanimation {
                     0% {
                         transform: translateY(-100px);
@@ -37,7 +37,7 @@
             }
 
             &__name {
-                animation: typeanimation 4s;
+                animation: typeanimation 2s;
                 @keyframes typeanimation {
                     0% {
                         transform: translateY(-100px);
@@ -52,7 +52,7 @@
             }
 
             &__type {
-                animation: typeanimation 3s;
+                animation: typeanimation 2s;
                 @keyframes typeanimation {
                     0% {
                         transform: translateY(-100px);
@@ -101,7 +101,6 @@
     &__outer {
         padding: 15px;
         height: 100%;
-        
     }
 
     &__wrap {

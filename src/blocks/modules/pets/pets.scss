@@ -28,6 +28,9 @@
     &__item {
         width: 23%;
         margin: 0 30px 33px 0;
+        @include b(1155) {
+            width: 22%;
+        }
         @include b(tablet) {
             width: 20%;
         }
