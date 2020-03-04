@@ -7,8 +7,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0 15px 35px;
+
     @include trs;
-    padding: 0 0 35px;
 
     &:hover {
         box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
@@ -16,13 +17,23 @@
     }
 
     &__img {
-        padding-bottom: 100%;
+        padding-bottom: calc(100% + 30px);
         position: relative;
         margin: 0 -15px 21px;
-        img {
-            @include img_ctr;
-        }
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                width: auto;
+                height: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
     }
+
+    
 
     &__name {
         display: block;

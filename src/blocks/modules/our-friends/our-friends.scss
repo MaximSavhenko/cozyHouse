@@ -1,3 +1,4 @@
+
 .our-friends {
     background-color: #f6f6f6;
     padding: 70px 0;
@@ -13,7 +14,7 @@
         position: relative;
         padding: 0 130px 66px;
         @include b(tablet) {
-            padding: 0 50px 60px;
+            padding: 0 25px 60px;
         }
     }
 
@@ -30,7 +31,7 @@
         width: 33.33%;
         padding: 0 25px;
         @include b(tablet) {
-            margin: 0 10px;
+            padding: 0 10px;
         }
         @include b(mobile) {
             width: 50%;
@@ -46,12 +47,12 @@
         }
 
         @include b(559) {
-            padding: 0;
+            padding: 10px;
         }
     }
 
     &__btn {
-        width: 265px;
+        max-width: 190px;
         margin: 0 auto;
     }
 
@@ -97,10 +98,10 @@
             top: 40%;
             left: 0;
             @include b(mobile) {
-                left: 50px;
+                left: 0;
             }
             @include b(559) {
-                left: 25px;
+                left: 0;
             }
         }
 
@@ -109,10 +110,10 @@
             top: 40%;
             right: 0;
             @include b(mobile) {
-                right: 50px;
+                right: 0;
             }
             @include b(559) {
-                right: 25px;
+                right: 0;
             }
 
             &::before {
