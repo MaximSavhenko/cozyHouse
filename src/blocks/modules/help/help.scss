@@ -4,6 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include b(mobile) {
+        padding: 40px 0;
+    }
 
     &__caption {
         text-align: center;
@@ -28,7 +31,9 @@
         padding: 38px 10px;
         @include b(mobile) {
             width: 33.333%;
-            margin-bottom: 40px;
+        }
+        @include b(526) {
+            padding: 38px 0;
         }
 
         img {

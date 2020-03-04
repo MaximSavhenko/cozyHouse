@@ -1192,13 +1192,16 @@ select {
     right: 0;
   }
 
+  .help {
+    padding: 40px 0;
+  }
+
   .help__caption {
     margin-bottom: 50px;
   }
 
   .help__items {
     width: 33.333%;
-    margin-bottom: 40px;
   }
 
   .donation__wrap {
@@ -1293,6 +1296,12 @@ select {
 
   .our-friends__swap--next {
     right: 0;
+  }
+}
+
+@media (max-width: 526px) {
+  .help__items {
+    padding: 38px 0;
   }
 }
 
