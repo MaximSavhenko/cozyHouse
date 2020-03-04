@@ -25,23 +25,10 @@
         align-items: center;
         flex-direction: column;
         width: 20%;
-        margin-bottom: 70px;
+        padding: 38px 10px;
         @include b(mobile) {
             width: 33.333%;
             margin-bottom: 40px;
-        }
-
-        &:nth-child(6) {
-            margin-bottom: 0;
-        }
-        &:nth-child(7) {
-            margin-bottom: 0;
-        }
-        &:nth-child(8) {
-            margin-bottom: 0;
-        }
-        &:nth-child(9) {
-            margin-bottom: 0;
         }
 
         img {
