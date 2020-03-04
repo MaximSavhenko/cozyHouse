@@ -446,7 +446,7 @@ select {
 }
 
 .our-friends__btn {
-  max-width: 190px;
+  max-width: 265px;
   margin: 0 auto;
 }
 
@@ -553,6 +553,7 @@ select {
 .animal__btn {
   max-width: 190px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .help {
@@ -579,23 +580,7 @@ select {
   align-items: center;
   flex-direction: column;
   width: 20%;
-  margin-bottom: 70px;
-}
-
-.help__items:nth-child(6) {
-  margin-bottom: 0;
-}
-
-.help__items:nth-child(7) {
-  margin-bottom: 0;
-}
-
-.help__items:nth-child(8) {
-  margin-bottom: 0;
-}
-
-.help__items:nth-child(9) {
-  margin-bottom: 0;
+  padding: 38px 10px;
 }
 
 .help__items img {
