@@ -1042,9 +1042,8 @@ select {
 }
 
 .footer__img {
-  width: 40px;
+  width: 100%;
   max-width: 40px;
-  margin-right: 22px;
 }
 
 .footer__img img {
@@ -1052,8 +1051,10 @@ select {
 }
 
 .footer__link {
+  display: block;
   color: #f1cdb3;
   font-size: 20px;
+  padding-left: 22px;
 }
 
 @media (max-width: 1024px) {
@@ -1332,6 +1333,10 @@ select {
 @media (max-width: 320px) {
   .pets__item {
     width: 100%;
+  }
+
+  .footer__link {
+    font-size: 19px;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
