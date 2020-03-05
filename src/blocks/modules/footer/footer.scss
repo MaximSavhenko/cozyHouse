@@ -27,7 +27,14 @@
             margin-bottom: 40px;
             border-bottom: 1px solid $beige;
             padding: 0 0 20px;
+
         }
+
+        // @include b(mobile) {
+        //     &:last-child {
+        //     max-width: 384px;
+        //     }
+        // }
 
         &:last-child {
             margin-right: 0;
@@ -60,18 +67,21 @@
     }
 
     &__img {
-        width: 40px;
+        width: 100%;
         max-width: 40px;
-        margin-right: 22px;
         img {
             max-width: 100%;
         }
     }
 
     &__link {
+        display: block;
         color: $beige;
         font-size: 20px;
+        padding-left: 22px;
+        @include b(320) {
+            font-size: 19px;
+        }
     }
-
     
 }
