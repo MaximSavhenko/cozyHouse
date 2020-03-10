@@ -244,7 +244,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 170px;
+  height: 166px;
 }
 
 .header__logo-link {
@@ -487,13 +487,13 @@ select {
 
 .our-friends__swap--prev {
   position: absolute;
-  top: 40%;
+  top: 37%;
   left: 0;
 }
 
 .our-friends__swap--next {
   position: absolute;
-  top: 40%;
+  top: 37%;
   right: 0;
 }
 
@@ -1003,7 +1003,7 @@ select {
 .footer {
   background-size: cover;
   background-position: 50% 50%;
-  padding: 48px 0;
+  padding: 69px 0 22px;
 }
 
 .footer__wrap {
