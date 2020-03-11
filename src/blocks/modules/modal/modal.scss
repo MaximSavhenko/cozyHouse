@@ -100,7 +100,10 @@
 
     &__outer {
         padding: 15px;
-        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
     }
 
     &__wrap {
@@ -108,10 +111,7 @@
         max-width: 100%;
         padding: 58px 58px 0 0;
         margin-bottom: 15px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
         @include b(tablet) {
             padding: 0;
         }

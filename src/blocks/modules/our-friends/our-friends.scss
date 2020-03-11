@@ -64,6 +64,7 @@
         position: relative;
         top: 0;
         z-index: 9;
+        cursor: pointer;
         @include trs;
         @include b(mobile) {
             background-color: $white;

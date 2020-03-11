@@ -458,6 +458,7 @@ select {
   position: relative;
   top: 0;
   z-index: 9;
+  cursor: pointer;
   transition: all .3s;
 }
 
@@ -888,7 +889,10 @@ select {
 
 .modal__outer {
   padding: 15px;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .modal__wrap {
@@ -896,10 +900,7 @@ select {
   max-width: 100%;
   padding: 58px 58px 0 0;
   margin-bottom: 15px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 }
 
 .modal__close-btn {
@@ -1033,6 +1034,7 @@ select {
 
 .footer__item {
   display: flex;
+  align-items: center;
   margin-bottom: 20px;
   transition: all .3s;
 }
