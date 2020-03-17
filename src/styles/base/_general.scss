@@ -11,6 +11,11 @@ body {
     min-width: 320px;
     font-family: $main-font;
     height: 100%;
+    @include b(tablet) {
+        &.overflow {
+            overflow: hidden;
+        }
+    }
 }
 
 *,

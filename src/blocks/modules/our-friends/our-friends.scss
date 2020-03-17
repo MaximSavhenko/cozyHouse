@@ -12,7 +12,10 @@
 
     &__outer {
         position: relative;
-        padding: 0 130px 66px;
+        padding: 0 130px;
+        // max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 66px;
         @include b(tablet) {
             padding: 0 25px 60px;
         }
