@@ -26,9 +26,9 @@
 
             &__nav-item {
                 a{
-                    color: $black;
+                    color: $white;
                     &:hover {
-                        color: $black;
+                        color: $beige;
                     }
                 }
             }
@@ -104,6 +104,7 @@
                 &:nth-child(1) {
                     top: 1px;
                     transform: rotate(-45deg);
+                    background-color: #fff;
                 }
 
                 &:nth-child(2) {
@@ -113,6 +114,8 @@
                 &:nth-child(3) {
                     top: 1px;
                     transform: rotate(45deg);
+                    background-color: #fff;
+
                 }
             }
         }

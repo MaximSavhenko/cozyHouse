@@ -30,9 +30,6 @@
         padding-right: 30px;
         margin-bottom: 33px;
         
-        // @include b(tablet) {
-        //     width: 33.3333%;
-        // }
         @include b(mobile) {
             width: 50%;
         }

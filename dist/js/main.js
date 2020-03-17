@@ -213,8 +213,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function toggleModal() {
-  var btns = document.querySelectorAll('.animal__btn .btn');
-  modals = document.querySelectorAll('.modal'), btnClose = document.querySelectorAll('.modal__close-btn');
+  var btns = document.querySelectorAll('.animal__btn .btn'),
+      modals = document.querySelectorAll('.modal'),
+      btnClose = document.querySelectorAll('.modal__close-btn');
   btns.forEach(function (item) {
     item.onclick = function (e) {
       e.preventDefault();

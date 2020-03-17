@@ -1,9 +1,9 @@
 import Swiper from 'swiper';
 
 function toggleModal() {
-    let btns = document.querySelectorAll('.animal__btn .btn');
+    let btns = document.querySelectorAll('.animal__btn .btn'),
         modals = document.querySelectorAll('.modal'),
-        btnClose = document.querySelectorAll('.modal__close-btn')
+        btnClose = document.querySelectorAll('.modal__close-btn');
 
 
     btns.forEach(function(item) {

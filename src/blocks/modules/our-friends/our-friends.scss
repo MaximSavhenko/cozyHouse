@@ -10,21 +10,24 @@
         
     }
 
+    // &__container {
+    //     // max-width: 925px;
+    //     margin: 0 auto;
+    // }
+
     &__outer {
         position: relative;
-        padding: 0 130px;
-        // max-width: 100%;
-        margin: 0 auto;
         margin-bottom: 66px;
-        @include b(tablet) {
-            padding: 0 25px 60px;
-        }
+        // @include b(tablet) {
+        //     padding: 0 25px 60px;
+        // }
     }
 
     &__wrap {
         margin-bottom: 60px;
         display: flex;
         margin: 0 -25px;
+        margin: 0 auto;
         @include b(tablet) {
             margin: 0 -10px;
         }
@@ -32,7 +35,9 @@
 
     &__item {
         width: 33.33%;
+        // max-width: 270px;
         padding: 0 25px;
+        margin: 0 auto;
         @include b(tablet) {
             padding: 0 10px;
         }
@@ -99,7 +104,7 @@
 
         &--prev {
             position: absolute;
-            top: 37%;
+            top: 50%;
             left: 0;
             @include b(mobile) {
                 left: 0;
@@ -111,7 +116,7 @@
 
         &--next {
             position: absolute;
-            top: 37%;
+            top: 50%;
             right: 0;
             @include b(mobile) {
                 right: 0;

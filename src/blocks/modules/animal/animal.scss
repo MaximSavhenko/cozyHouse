@@ -8,6 +8,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 0 15px 35px;
+    max-width: 270px;
+    margin: 0 auto;
 
     @include trs;
 
