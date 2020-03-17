@@ -873,11 +873,11 @@ button.swiper-pagination-bullet {
 }
 
 .header--white-bg .header__nav-item a {
-  color: #292929;
+  color: #fff;
 }
 
 .header--white-bg .header__nav-item a:hover {
-  color: #292929;
+  color: #f1cdb3;
 }
 
 .header__wrap {
@@ -939,6 +939,7 @@ button.swiper-pagination-bullet {
 .header__btn-menu.active span:nth-child(1) {
   top: 1px;
   transform: rotate(-45deg);
+  background-color: #fff;
 }
 
 .header__btn-menu.active span:nth-child(2) {
@@ -948,6 +949,7 @@ button.swiper-pagination-bullet {
 .header__btn-menu.active span:nth-child(3) {
   top: 1px;
   transform: rotate(45deg);
+  background-color: #fff;
 }
 
 .header__nav-list {
@@ -1072,8 +1074,6 @@ button.swiper-pagination-bullet {
 
 .our-friends__outer {
   position: relative;
-  padding: 0 130px;
-  margin: 0 auto;
   margin-bottom: 66px;
 }
 
@@ -1081,11 +1081,13 @@ button.swiper-pagination-bullet {
   margin-bottom: 60px;
   display: flex;
   margin: 0 -25px;
+  margin: 0 auto;
 }
 
 .our-friends__item {
   width: 33.33%;
   padding: 0 25px;
+  margin: 0 auto;
 }
 
 .our-friends__btn {
@@ -1131,13 +1133,13 @@ button.swiper-pagination-bullet {
 
 .our-friends__swap--prev {
   position: absolute;
-  top: 37%;
+  top: 50%;
   left: 0;
 }
 
 .our-friends__swap--next {
   position: absolute;
-  top: 37%;
+  top: 50%;
   right: 0;
 }
 
@@ -1163,6 +1165,8 @@ button.swiper-pagination-bullet {
   flex-direction: column;
   justify-content: space-between;
   padding: 0 15px 35px;
+  max-width: 270px;
+  margin: 0 auto;
   transition: all .3s;
 }
 
@@ -1752,10 +1756,6 @@ button.swiper-pagination-bullet {
 
   .header__nav-item a:hover {
     color: #f1cdb3;
-  }
-
-  .our-friends__outer {
-    padding: 0 25px 60px;
   }
 
   .our-friends__wrap {
