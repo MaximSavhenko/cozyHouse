@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="header__burger-position">
-                <div class="header__btn-menu ">
+                <div class="header__btn-menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -110,42 +110,78 @@
             <div class="our-friends">
     <div class="container">
         <span class="caption our-friends__caption">Our friends who are looking for a house</span>
-        <div class="our-friends__outer">
+        <div class="our-friends__outer swiper-container">
             <div class="our-friends__swap our-friends__swap--prev"></div>
             <div class="our-friends__swap our-friends__swap--next"></div>
-            <div class="our-friends__wrap">
-                <div class="our-friends__item">
+            <div class="our-friends__wrap swiper-wrapper">
+                <div class="our-friends__item swiper-slide">
                     <div class="animal">
     <div class="animal__img">
         <img src="./img/pic/cat.jpg" alt="Katrine">
     </div>
     <span class="animal__name">Katrine</span>
     <div class="animal__btn">
-        <a href="#" class="btn btn--border">Learn More</a>
+        <a href="#" class="btn btn--border" data-pets="katrine">Learn More</a>
     </div>
 </div>
 
                 </div> 
-                <div class="our-friends__item">
+                <div class="our-friends__item swiper-slide">
                     <div class="animal">
     <div class="animal__img">
         <img src="./img/pic/dog_1.jpg" alt="Jennifer">
     </div>
     <span class="animal__name">Jennifer</span>
     <div class="animal__btn">
-        <a href="#" class="btn btn--border">Learn More</a>
+        <a href="#" class="btn btn--border" data-pets="jennifer">Learn More</a>
     </div>
 </div>
 
                 </div> 
-                <div class="our-friends__item">
+                <div class="our-friends__item swiper-slide">
                     <div class="animal">
     <div class="animal__img">
         <img src="./img/pic/dog_2.jpg" alt="Woody">
     </div>
     <span class="animal__name">Woody</span>
     <div class="animal__btn">
-        <a href="#" class="btn btn--border">Learn More</a>
+        <a href="#" class="btn btn--border" data-pets="woody">Learn More</a>
+    </div>
+</div>
+
+                </div> 
+                <div class="our-friends__item swiper-slide">
+                    <div class="animal">
+    <div class="animal__img">
+        <img src="./img/pic/dog_2.jpg" alt="Woody">
+    </div>
+    <span class="animal__name">Woody</span>
+    <div class="animal__btn">
+        <a href="#" class="btn btn--border" data-pets="woody">Learn More</a>
+    </div>
+</div>
+
+                </div> 
+                <div class="our-friends__item swiper-slide">
+                    <div class="animal">
+    <div class="animal__img">
+        <img src="./img/pic/dog_2.jpg" alt="Woody">
+    </div>
+    <span class="animal__name">Woody</span>
+    <div class="animal__btn">
+        <a href="#" class="btn btn--border" data-pets="woody">Learn More</a>
+    </div>
+</div>
+
+                </div> 
+                <div class="our-friends__item swiper-slide">
+                    <div class="animal">
+    <div class="animal__img">
+        <img src="./img/pic/dog_2.jpg" alt="Woody">
+    </div>
+    <span class="animal__name">Woody</span>
+    <div class="animal__btn">
+        <a href="#" class="btn btn--border" data-pets="woody">Learn More</a>
     </div>
 </div>
 
@@ -314,7 +350,31 @@
 </div>
         </div>
 
-        <div class="modal">
+        <div class="modal" id="katrine">
+    <div class="modal__outer">
+        <div class="modal__wrap">
+            <div class="modal__close-btn"></div>
+            <div class="modal__content">
+                <div class="modal__img">
+                    <img src="./img/pic/modal_pet.jpg" alt="">
+                </div>
+                <div class="modal__info">
+                    <span class="caption modal__name">Katrine</span>
+                    <span class="modal__type">Pooch + Labrador</span>
+                    <p class="modal__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+                    <ul class="modal__list">
+                        <li class="modal__item">Age: <span>2 months</span></li>
+                        <li class="modal__item">Inoculations: <span>none</span></li>
+                        <li class="modal__item">Diseases: <span>none</span></li>
+                        <li class="modal__item">Parasites: <span>none</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="modal" id="jennifer">
     <div class="modal__outer">
         <div class="modal__wrap">
             <div class="modal__close-btn"></div>
@@ -324,6 +384,30 @@
                 </div>
                 <div class="modal__info">
                     <span class="caption modal__name">Jennifer</span>
+                    <span class="modal__type">Pooch + Labrador</span>
+                    <p class="modal__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
+                    <ul class="modal__list">
+                        <li class="modal__item">Age: <span>2 months</span></li>
+                        <li class="modal__item">Inoculations: <span>none</span></li>
+                        <li class="modal__item">Diseases: <span>none</span></li>
+                        <li class="modal__item">Parasites: <span>none</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="modal" id="woody">
+    <div class="modal__outer">
+        <div class="modal__wrap">
+            <div class="modal__close-btn"></div>
+            <div class="modal__content">
+                <div class="modal__img">
+                    <img src="./img/pic/modal_pet.jpg" alt="">
+                </div>
+                <div class="modal__info">
+                    <span class="caption modal__name">Woody</span>
                     <span class="modal__type">Pooch + Labrador</span>
                     <p class="modal__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</p>
                     <ul class="modal__list">
