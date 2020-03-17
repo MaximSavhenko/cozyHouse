@@ -222,12 +222,14 @@ function toggleModal() {
       var id = e.target.dataset.pets;
       var modal = document.querySelector("#".concat(id));
       modal.classList.add('active');
+      document.body.classList.toggle('overflow');
     };
   });
   btnClose.forEach(function (btn) {
     btn.onclick = function () {
       modals.forEach(function (modal) {
         modal.classList.remove('active');
+        document.body.classList.toggle('overflow');
       });
     };
   });
