@@ -12,14 +12,14 @@ function toggleModal() {
             let id = e.target.dataset.pets;
             let modal = document.querySelector(`#${id}`);
                 modal.classList.add('active');
-                document.body.classList.toggle('overflow');
+                document.body.classList.add('overflow');
         }
     });
     btnClose.forEach(function(btn) {
         btn.onclick = function() {
             modals.forEach(function(modal) {
                 modal.classList.remove('active');
-                document.body.classList.toggle('overflow');
+                document.body.classList.remove('overflow');
             })
         }
     })
