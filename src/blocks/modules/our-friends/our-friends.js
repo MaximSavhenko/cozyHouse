@@ -35,6 +35,22 @@ new Swiper('.swiper-container', {
       nextEl: '.our-friends__swap--next',
       prevEl: '.our-friends__swap--prev',
     },
+    breakpoints: {
+        768: {
+        slidesPerView: 3,
+        spaceBetween: 40
+        },
+
+        481: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+         
+      }
   });
 
 
