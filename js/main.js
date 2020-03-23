@@ -247,16 +247,13 @@ new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-container', {
   },
   breakpoints: {
     768: {
-      slidesPerView: 3,
-      spaceBetween: 40
+      slidesPerView: 3
     },
     481: {
-      slidesPerView: 2,
-      spaceBetween: 10
+      slidesPerView: 2
     },
     300: {
-      slidesPerView: 1,
-      spaceBetween: 10
+      slidesPerView: 1
     }
   }
 });
