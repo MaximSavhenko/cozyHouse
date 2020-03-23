@@ -16,6 +16,12 @@
         @include b(tablet) {
             padding: 0 50px;
         }
+        @include b(mobile) {
+            padding: 0;
+        }
+        @include b(320) {
+            padding: 0;
+        }
     }
 
     &__outer {
@@ -46,10 +52,12 @@
         }
         @include b(tablet) {
             padding: 0 10px;
+            width: 50%;
         }
 
         @include b(559) {
             padding: 10px;
+            width: 100%;
         }
     }
 

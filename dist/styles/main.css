@@ -1773,6 +1773,7 @@ button.swiper-pagination-bullet {
 
   .our-friends__item {
     padding: 0 10px;
+    width: 50%;
   }
 
   .modal__wrap {
@@ -1833,6 +1834,10 @@ button.swiper-pagination-bullet {
   .about__text {
     margin-bottom: 40px;
     max-width: 100%;
+  }
+
+  .our-friends__container {
+    padding: 0;
   }
 
   .our-friends__swap {
@@ -1933,6 +1938,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 559px) {
   .our-friends__item {
     padding: 10px;
+    width: 100%;
   }
 
   .our-friends__swap--prev {
@@ -1975,6 +1981,10 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 320px) {
+  .our-friends__container {
+    padding: 0;
+  }
+
   .pets__item {
     width: 100%;
   }

@@ -38,16 +38,16 @@ new Swiper('.swiper-container', {
     breakpoints: {
         768: {
         slidesPerView: 3,
-        spaceBetween: 40
+        
         },
 
         481: {
           slidesPerView: 2,
-          spaceBetween: 10
+          
         },
         300: {
             slidesPerView: 1,
-            spaceBetween: 10
+            
           },
          
       }
